@@ -10,8 +10,10 @@ public class DeleteFile {
     }
 
     public static void main(String[] args) {
+
+
         DeleteFile d = new DeleteFile();
-        //d.deleteWithNio();
+        d.deleteWithNio();
         d.deleteWithIOFile();
     }
 
