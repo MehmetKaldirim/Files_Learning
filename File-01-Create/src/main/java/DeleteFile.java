@@ -11,8 +11,8 @@ public class DeleteFile {
 
     public static void main(String[] args) {
         DeleteFile d = new DeleteFile();
-        d.deleteWithNio();
-
+        //d.deleteWithNio();
+        d.deleteWithIOFile();
     }
 
     public void deleteWithNio() {
@@ -31,6 +31,20 @@ public class DeleteFile {
             }
 
             System.out.println("Deletion successful.");
+        }
+    }
+
+    public void deleteWithIOFile(){
+        {
+            File file
+                    = new File("Annotation.txt").getAbsoluteFile();
+
+            if (file.delete()) {
+                System.out.println("File deleted successfully");
+            }
+            else {
+                System.out.println("Failed to delete the file");
+            }
         }
     }
 }
