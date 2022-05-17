@@ -14,9 +14,9 @@ public class CreateFile {
         CreateFile createFile = new CreateFile();
         createFile.createIoFile();
         System.out.println("Second file with FileOutputStream Classes");
-        //createFile.fileOutputStream();
+        createFile.fileOutputStream();
         System.out.println("Third File with java.nio.file.Files package");
-        //createFile.javaNioFileCreateMethod();
+        createFile.javaNioFileCreateMethod();
 
     }
 
